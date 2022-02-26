@@ -1,0 +1,27 @@
+@import './title.css';
+@import './navigation.css';
+@import './header-button.css';
+
+.header{
+  background: blue;
+  position: sticky;
+  inset-block-start: 0;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  z-index: 2;
+  padding-inline: 3rem;
+}
+
+@media (max-width: 700px) {
+
+  .navigation, .header-button {
+    display: none;
+  }
+
+
+}
+
+

@@ -1,0 +1,16 @@
+.firstParagraph{
+  font: var(--headline2);
+  margin: 0;
+  padding-block-end: 1.5rem;
+  max-inline-size: 446px;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.secondParagraph{
+  font: var(--body1-regular);
+  color: grey;
+  margin: 0;
+  inline-size: 448px;
+  block-size: auto;
+}
