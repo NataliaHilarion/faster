@@ -1,0 +1,15 @@
+@import './comment-detail.css';
+@import './comment-image.css';
+@import './comment-description.css';
+@import './comment-data.css';
+
+.comment-user{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  block-size: 30.7rem;
+  gap: 1.5rem;
+ }
+
+
+

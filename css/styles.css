@@ -7,7 +7,9 @@
 @import './third-section.css';
 @import './paragraph.css';
 @import './happy-section.css';
-@import './comments-section.css';
+@import './comment-section.css';
+@import './footer.css';
+
 
 :root{
   --columnSize: 1fr 400px 1028px 1fr;
