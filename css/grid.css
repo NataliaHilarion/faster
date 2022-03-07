@@ -1,12 +1,38 @@
+:root{
+  --sizePhone: 400px;
+  --columnSize: 1fr var(--sizePhone) 880px 1fr;
+  --primary: #fed941;
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #000000;
+  --headline3: Extra bold 2.875rem/3.5rem Inter;
+  --headline2: 700 3rem/3.625rem Inter;
+  --headline4: 700 1.75rem/normal Inter;
+  --headline5: 700 1.5625rem/normal Inter;
+  --button: 700 1.125rem/1.75rem Inter;
+  --caption: 400 0.75rem/1.375rem Inter;
+  --body1-regular: 400 1.125rem/1.6875rem Inter;
+  --body1-bold: 700 1.125rem/1.6875rem Inter;
+  --body2-regular: 400 1rem/1.375rem Inter;
+  --body2-bold: 700 1rem/1.1875rem Inter;
+}
+
 .grid{
   display: grid;
   grid-template-columns: var(--columnSize) ;
-  grid-template-rows: 86px 814px 1121px 775px 775px ;
-  grid-template-areas: "header header header header"
-                       "wrapper-start phone content wrapper-end"
-                       "wrapper-start phone first-section wrapper-end"
-                       "wrapper-start phone second-section wrapper-end"
-                       "wrapper-start phone third-section wrapper-end";
+  grid-template-rows: 814px 1121px 775px 775px ;
+  grid-template-areas: "wrapper-start phone content wrapper-end";
+}
+
+.grid section{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: var(--columnSize);
+  grid-template-areas: " . . content . ";
+}
+
+.inset-grid [class*="content"]{
+  grid-area: content;
 }
 
 .header{
@@ -18,59 +44,7 @@
 }
 
 .hero{
-  grid-area: content;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: var(--columnSize);
-  grid-template-areas: " . . content-hero . ";
-
+  grid-row-start: 1;
 }
 
-.hero-content{
-  grid-area: content-hero;
-}
 
-.first-section{
-  grid-area: first-section;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: var(--columnSize);
-  grid-template-areas: " . . first-section-content . ";
-}
-
-.first-section-content{
-    grid-area: first-section-content;
-}
-
-.second-section{
-  grid-area: second-section;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: var(--columnSize);
-  grid-template-areas: " . . SecondSection-content . ";
-}
-
-.second-section-content{
-    grid-area: SecondSection-content;
-}
-
-.third-section{
-  grid-area: third-section;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: var(--columnSize);
-  grid-template-areas: " . . ThirdSection-content . ";
-}
-
-.third-section-content{
-    grid-area: ThirdSection-content;
-}
-
-@media (max-width: 700px) {
-
-  .grid {
-     grid-template-rows: 76px 200px;
-  }
-
-
-}
