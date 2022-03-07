@@ -9,7 +9,21 @@
   align-items: end;
   block-size: 30.7rem;
   gap: 1.5rem;
+
+
+
  }
 
+@media screen and (max-width: 1468px){
+.comment-user{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  block-size: 1600px;
 
+ }
+}
 

@@ -14,3 +14,21 @@
   inline-size: 448px;
   block-size: auto;
 }
+
+@media screen and (max-width: 1468px){
+.firstParagraph{
+  font: var(--headline5);
+  margin: 0;
+  padding-block-end: 1.5rem;
+  max-inline-size: 20rem;
+  inline-size: 100%;
+  block-size: auto;
+}
+.secondParagraph{
+  font: var(--body2-regular);
+  color: grey;
+  margin: 0;
+  inline-size: 320px;
+  block-size: auto;
+}
+}

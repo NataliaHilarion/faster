@@ -10,3 +10,11 @@
   font: var(--body1-regular);
   text-align: center;
 }
+
+@media screen and (max-width: 1468px){
+.comment-description{
+  inline-size: 16rem;
+
+}
+
+}

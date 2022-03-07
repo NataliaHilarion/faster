@@ -45,3 +45,35 @@
 .footer-time button:active{
   transform: scale(.95);
 }
+
+
+
+@media screen and (max-width: 1468px){
+.footer-time{
+  inline-size: 20rem;
+  padding-block: 1.5rem ;
+  padding-inline: 0;
+  transform: translateY(-6rem);
+  margin: auto;
+ }
+
+.footer-time p:first-of-type{
+  font: var(--headline5);
+  margin-block-end: 12px;
+}
+
+.footer-time p:last-of-type{
+  font: var(--body1-regular);
+  color: var(--grey);
+  margin-block-end: 24px;
+}
+
+.footer-time button{
+  padding-block: 12px;
+  padding-inline: 4.5rem;
+  inline-size: 256px;
+}
+
+
+
+}

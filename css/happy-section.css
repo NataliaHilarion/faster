@@ -16,3 +16,15 @@
 .happy-details img{
   margin-block-end: 4rem;
 }
+
+@media screen and (max-width: 1468px){
+
+.happy-details img{
+  inline-size: 100vw;
+
+}
+.happy-section{
+  margin-inline: .5rem;
+}
+
+}
