@@ -1,2 +1,2 @@
 # faster
-Pagina desarrolada con HTML, CSS, GRID LAYOUT, FLEXBOX
+Pagina FASTER desarrolada con HTML, CSS, GRID LAYOUT, FLEXBOX
